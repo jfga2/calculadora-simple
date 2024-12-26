@@ -20,6 +20,14 @@ def dividir(a, b):
         return "Error: División por cero."
     return a / b
 
+def validar_numero(prompt):
+    """Valida que la entrada sea un número válido."""
+    while True:
+        try:
+            return float(input(prompt))
+        except ValueError:
+            print("Por favor, introduce un número válido.")
+
 if __name__ == "__main__":
     print("=== Calculadora Simple ===")
     print("1. Sumar (+)")
@@ -28,8 +36,8 @@ if __name__ == "__main__":
     print("4. Dividir (/)")
     print("=====================")
     opcion = int(input("Elige una opción (1-4): "))
-    a = float(input("Introduce el primer número: "))
-    b = float(input("Introduce el segundo número: "))
+    a = validar_numero("Introduce el primer número: ")
+    b = validar_numero("Introduce el segundo número: ")
 
     if opcion == 1:
         print(f"Resultado: {sumar(a, b)}")
