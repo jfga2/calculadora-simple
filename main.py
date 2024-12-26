@@ -8,7 +8,7 @@ def restar(a, b):
 
 def multiplicar(a, b):
     """Multiplica dos números y retorna el resultado."""
-    return a * b
+    return a * b + 1 # Aquí está el error
 
 def dividir(a, b):
     """
