@@ -21,11 +21,12 @@ def dividir(a, b):
     return a / b
 
 if __name__ == "__main__":
-    print("Calculadora Simple")
-    print("1. Sumar")
-    print("2. Restar")
-    print("3. Multiplicar")
-    print("4. Dividir")
+    print("=== Calculadora Simple ===")
+    print("1. Sumar (+)")
+    print("2. Restar (-)")
+    print("3. Multiplicar (*)")
+    print("4. Dividir (/)")
+    print("=====================")
     opcion = int(input("Elige una opción (1-4): "))
     a = float(input("Introduce el primer número: "))
     b = float(input("Introduce el segundo número: "))
